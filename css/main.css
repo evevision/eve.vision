@@ -1,0 +1,298 @@
+/*! HTML5 Boilerplate v7.3.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  background: #231f20;
+  color: #fff;
+  font-size: 1em;
+  line-height: 1.4;
+  font-family: "Eve Sans Neue";
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+  font-family: "Eve Sans Neue";
+  src: url(../evesansneue.woff2);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  float: left;
+  background-image: url(../img/logo.png);
+  background-repeat: none;
+  width: 200px;
+  height: 200px;
+  background-size: 100%;
+  margin: 10px;
+}
+
+.eve-button {
+  background-color: #26323e;
+  color: #94989d;
+  padding-top: 3px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 0px;
+  margin-bottom: 2px;
+  display: inline-block;
+  border: 1px solid #3d4b5a;
+  box-shadow: inset 0 0 4px #333f4b;
+  font-size: 11px;
+  transition: background-color 0.25s ease-out, color 0.25s ease-out, border 0.25s ease-out;
+  margin-right: 4px;
+  flex-shrink: 1;
+}
+
+.eve-button:hover {
+  color:#cfd8e1;
+  background-color:#303f4e;
+  border:1px solid #4b6a8a;
+}
+
+.eve-window {
+  z-index: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color:rgba(19,19,20,0.5);
+  border: 1px solid #1a1e22;
+
+  color: #d6d8da;
+  font-family: "Eve Sans Neue";
+  font-size: 12px;
+  letter-spacing: 0.17px;
+
+  user-select: none;
+
+  overflow: hidden;
+}
+
+#welcome {
+  width: 600px;
+  position: absolute;
+  right: calc(55vw);
+  top: calc(25vh);
+}
+
+#video {
+  min-width: 500px;
+  width: 30vw;
+  position: absolute;
+  left: calc(55vw);
+  top: calc(30vh);
+}
+
+#downloads {
+  width: 400px;
+  position: absolute;
+  right: calc(65vw);
+  top: calc(60vh);
+}
+
+.eve-window:hover {
+  border: 1px solid #292d31;
+}
+
+.eve-window-contents {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.eve-window-titlebar {
+  flex-shrink: 1;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.eve-window-titlebar-title {
+  float: left;
+}
+
+.eve-panel {
+  background-color: rgba(24,24,25,0.5);
+  padding: 7px;
+  margin: 3px;
+  border: 1px solid #1a1e22;
+  flex-grow: 1;
+  transition: border 0.3s linear, background-color 0.3s linear;
+}
+
+.eve-border-corner-top-left {
+  border-left: 1px solid #8f9dab;
+  border-top: 1px solid #8f9dab;
+  height: 2px;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.eve-border-corner-bottom-left {
+  border-left: 1px solid #8f9dab;
+  border-bottom: 1px solid #8f9dab;
+  height: 2px;
+  width: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.eve-border-corner-bottom-right {
+  border-right: 1px solid #8f9dab;
+  border-bottom: 1px solid #8f9dab;
+  height: 2px;
+  width: 2px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.eve-border-corner-top-right {
+  border-right: 1px solid #8f9dab;
+  border-top: 1px solid #8f9dab;
+  height: 2px;
+  width: 2px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+  display: none !important;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
