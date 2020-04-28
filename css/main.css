@@ -186,21 +186,22 @@ textarea {
     position: relative !important;
     left: 10vw !important;
     top: 100px !important;
-    width: 80vw;
+    width: 80vw !important;
   }
 
   #downloads {
     position: relative !important;
-    left: calc(50vw - 200px) !important;
+    left: 10vw !important;
     top: 150px !important;
+    width: 80vw !important;
   }
 
   #video {
     position: relative !important;
-    width: 80vw;
-    height: 50vw;
+    width: 80vw !important;
+    height: 50vw !important;
     top: 200px !important;
-    left: 10vw;
+    left: 10vw !important;
     min-width: 100px !important;
   }
 
