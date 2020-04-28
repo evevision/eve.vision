@@ -162,8 +162,14 @@ textarea {
   overflow: hidden;
 }
 
+.eve-window-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #welcome {
-  width: 600px;
+  width: 550px;
   position: absolute;
   right: calc(60vw);
   top: calc(25vh);
