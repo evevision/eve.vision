@@ -162,16 +162,16 @@ textarea {
 #welcome {
   width: 600px;
   position: absolute;
-  right: calc(55vw);
+  right: calc(60vw);
   top: calc(25vh);
 }
 
 #video {
-  min-width: 700px;
-  width: 30vw;
+  width: 51vw;
+  height: 30vw;
   position: absolute;
-  left: calc(50vw);
-  top: calc(30vh);
+  left: calc(46vw);
+  top: calc(50vh - 15vw);
 }
 
 #downloads {
@@ -197,9 +197,10 @@ textarea {
 
   #video {
     position: relative !important;
+    width: 80vw;
+    height: 50vw;
     top: 200px !important;
-    width: 70vw;
-    left: 15vw;
+    left: 10vw;
     min-width: 100px !important;
   }
 
