@@ -184,7 +184,17 @@ textarea {
   top: calc(60vh);
 }
 
+@media all and (max-width: 800px) {
+
+  .logo {
+    float: none;
+  }
+
+}
+
 @media all and (max-width: 1400px) {
+
+
   #welcome {
     position: relative !important;
     left: 10vw !important;
